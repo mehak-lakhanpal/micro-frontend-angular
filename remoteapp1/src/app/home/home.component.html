@@ -1,0 +1,15 @@
+<div>
+    <h1>Insurance Details</h1>
+        <ul>
+          <li>
+            Name: {{ insuranceByUser.name }}
+        </li>
+          <li>Policy No :{{insuranceByUser.policyNo}}</li>
+          <li>Cover: {{insuranceByUser.cover}}</li>
+          <li>Status: {{insuranceByUser.status}}</li>
+          <li>Premium Base Amount: {{insuranceByUser.premiumBaseAmount}}</li>
+          <li>Gst: {{insuranceByUser.gst}}</li>
+          <li>Discount: {{insuranceByUser.discount}}</li>
+           <button (click)="payPremium()">Pay Premium</button>
+        </ul>
+  </div>

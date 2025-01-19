@@ -1,0 +1,13 @@
+<div *ngIf="!isPaid">
+<button (click)="calculate()">Click for total premium</button>
+<div *ngIf="totalPremium">
+<p>Your total premium amount(included gst and discount) is Rs. {{totalPremium}}</p>
+<p>You can pay by these options -</p>
+<button (click)="pay()">Debit Card</button> &nbsp;
+<button (click)="pay()">UPI</button>&nbsp;
+<button (click)="pay()">Credit Card</button>&nbsp;
+</div>
+</div>
+<div *ngIf="isPaid">
+    <p>Payment done successfully!</p>
+</div>

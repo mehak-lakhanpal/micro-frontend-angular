@@ -1,0 +1,23 @@
+<div>
+    <h1>Insurance Details</h1>
+    <!-- <input [(ngModel)]="newTodo" placeholder="Enter a task" /> -->
+  
+      <div *ngFor="let i of insurance">
+        <ul>
+          <li>
+            Name: {{ i.name }}
+        </li>
+          <li>Policy No :{{i.policyNo}}</li>
+        </ul>
+        <button (click)="viewDetails(i.policyNo)">View Details</button>
+        <!-- <button (click)="payPremium()">Pay Premium</button> -->
+        <!-- <span [style.textDecoration]="none">
+          {{ i.name }}
+        </span>
+        <button (click)="toggleCompletion(todo)">
+          {{ todo.completed ? 'Undo' : 'Complete' }}
+        </button>
+        <button (click)="deleteTodo(todo.id)">Delete</button> -->
+      <!-- </div> -->
+  </div>
+  </div>

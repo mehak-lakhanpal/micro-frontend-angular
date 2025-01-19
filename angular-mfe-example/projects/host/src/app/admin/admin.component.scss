@@ -1,0 +1,35 @@
+$main-background-color: green;
+$main-text-color: white;
+$main-font-size: 16px;
+$main-border-radius: 4px;
+
+@mixin button-style {
+  padding: 8px 16px;
+  background-color: $main-background-color;
+  color: $main-text-color;
+  border: none;
+  border-radius: $main-border-radius;
+  font-size: $main-font-size;
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  @include button-style;
+}
+
+ul {
+  list-style: inside;
+  padding: 5;
+  margin: 10;
+}
+
+li {
+  padding: 5px;
+  font-size: $main-font-size;
+  color: gray;
+}
